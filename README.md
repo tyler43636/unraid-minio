@@ -17,6 +17,7 @@ docker run -d \
   -p <port>:9000 \
   -e PUID=<uid for user> \
   -e PGID=<gid for user> \
+  -v /path/to/data:/export \
   tyler43636/unraid-minio
 ```
 
@@ -27,6 +28,7 @@ docker run -d \
   -p 9000:9000 \
   -e PUID=99 \
   -e PGID=100 \
+  -v /data:/export \
   tyler43636/unraid-minio
 ```
 
